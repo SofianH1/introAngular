@@ -1,0 +1,22 @@
+*{
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 50vw;
+}
+.components{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+  background-color: chartreuse;
+  height: 500px;
+  width:50vw;
+}
+.components *{
+  border: solid black 8px;
+  border-radius: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+}

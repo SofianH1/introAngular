@@ -1,4 +1,5 @@
 <ul>
-    <li><a [routerLink]="['/demo']">Demo</a></li>
-    <li><a [routerLink]="['/exo']">Exo</a></li>
+    @for (item of navItems; track $index) {
+      <li><a [routerLink]="item.url">{{item.title}}</a></li>
+    }
 </ul>

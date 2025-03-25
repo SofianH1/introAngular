@@ -1,0 +1,15 @@
+<p>directive !</p>
+
+<p>Age {{age}}</p>
+
+@if (age >= 18)
+{
+    <p>Est Majeur</p>
+}
+@else{
+    <p>Est Mineur</p>
+}
+
+@for (elem of maList; track elem) {
+  <p>Index {{$index}} : Valeur {{elem}}</p>
+}

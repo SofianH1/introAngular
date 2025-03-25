@@ -1,8 +1,9 @@
 <ul>
-    <li>
-        <a [routerLink]="['/demo','demo1']">Demo 1</a>
-    </li>
-    <li>
-        <a [routerLink]="['/demo','demo2']">Demo 2</a>
-    </li>
+@for (item of navItems; track $index) {
+  <li>
+    <a [routerLink]="item.url">{{item.title}}</a>
+  </li>
+}
 </ul>
+
+<router-outlet></router-outlet>

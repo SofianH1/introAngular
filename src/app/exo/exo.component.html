@@ -1,4 +1,6 @@
 <ul>
-    <li><a [routerLink]="['/exo', 'chrono']">Chronomètre</a></li>
+  @for (item of navitem; track $index) {
+    <li><a [routerLink]="item.url">{{item.title}}</a></li>
+  }
 </ul>
 <router-outlet></router-outlet>
